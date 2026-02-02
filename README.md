@@ -3,9 +3,9 @@
 ## Introduction 
 ### What is a Stored Procedure?
 A stored procedure is a set of SQL statements that you save in the database. Think of it like a recipe:
-•	You write the recipe once
-•	You can use it many times
-•	You just need to "call" it when needed
+- You write the recipe once
+- You can use it many times
+- You just need to "call" it when needed
 
 ## Why Use Stored Procedures?
 - ✅ Reusability - Write once, use many times
@@ -24,10 +24,10 @@ END //
 DELIMITER ;
 ```
 ## Understanding DELIMITER:
-•	MySQL normally uses ; to end statements
-•	Inside procedures, we need ; for multiple statements
-•	We temporarily change the delimiter to // so MySQL knows when the procedure ends
-•	After creating the procedure, we change it back to ;
+- MySQL normally uses ; to end statements
+- Inside procedures, we need ; for multiple statements
+- We temporarily change the delimiter to // so MySQL knows when the procedure ends
+- After creating the procedure, we change it back to ;
 
 The scripts are designed mainly for **MySQL**
 
