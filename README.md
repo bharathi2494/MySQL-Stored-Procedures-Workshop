@@ -17,6 +17,7 @@ The scripts are designed mainly for **MySQL**
 
 ## Sample Stored Procedure
 ```python
+DELIMITER \\
 CREATE PROCEDURE GetEmployeeByDept (
     IN dept_id INT
 )
@@ -24,5 +25,20 @@ BEGIN
     SELECT * 
     FROM employees
     WHERE department_id = dept_id;
-END;
+END \\
+DELIMITER ;
 ``` 
+## How to Run
+- Create a database:
+- Run schema.sql to create tables
+- Run sample_data.sql to insert data
+- Execute procedure files one by one
+- Call procedures using:
+```
+  CALL GetEmployeeByDept(10);
+```
+## Learning Objective
+- Understand how stored procedures improve performance
+- Reduce code duplication
+- Encapsulate business logic at the database level
+- Prepare for Data Analyst / SQL Developer interviews
