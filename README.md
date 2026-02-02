@@ -34,7 +34,7 @@ DELIMITER ;
 - Run sample_data.sql to insert data
 - Execute procedure files one by one
 - Call procedures using:
-```
+```python
   CALL GetEmployeeByDept(10);
 ```
 ## Learning Objective
