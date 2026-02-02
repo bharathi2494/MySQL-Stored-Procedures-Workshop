@@ -1,7 +1,33 @@
 # SQL Stored Procedures Practice
-## Overview
 
-This repository is created to practice and understand SQL Stored Procedures using real-world examples. It covers basic to advanced concepts such as parameters, control flow, error handling, and performance optimization.  
+## Introduction 
+### What is a Stored Procedure?
+A stored procedure is a set of SQL statements that you save in the database. Think of it like a recipe:
+•	You write the recipe once
+•	You can use it many times
+•	You just need to "call" it when needed
+
+## Why Use Stored Procedures?
+- ✅ Reusability - Write once, use many times
+- ✅ Performance - Faster execution (pre-compiled)
+- ✅ Security - Control who can do what
+- ✅ Maintainability - Update in one place
+- ✅ Reduce Network Traffic - Send less data over the network
+
+## Basic Syntax Structure
+```python
+DELIMITER //
+CREATE PROCEDURE procedure_name()
+BEGIN
+-- Your SQL and NON SQL statements go here
+END //
+DELIMITER ;
+```
+## Understanding DELIMITER:
+•	MySQL normally uses ; to end statements
+•	Inside procedures, we need ; for multiple statements
+•	We temporarily change the delimiter to // so MySQL knows when the procedure ends
+•	After creating the procedure, we change it back to ;
 
 The scripts are designed mainly for **MySQL**
 
@@ -15,28 +41,6 @@ The scripts are designed mainly for **MySQL**
 - Performance optimization
 - Reusable database logic
 
-## Sample Stored Procedure
-```python
-DELIMITER \\
-CREATE PROCEDURE GetEmployeeByDept (
-    IN dept_id INT
-)
-BEGIN
-    SELECT * 
-    FROM employees
-    WHERE department_id = dept_id;
-END \\
-DELIMITER ;
-``` 
-## How to Run
-- Create a database:
-- Run schema.sql to create tables
-- Run sample_data.sql to insert data
-- Execute procedure files one by one
-- Call procedures using:
-```python
-  CALL GetEmployeeByDept(10);
-```
 ## Learning Objective
 - Understand how stored procedures improve performance
 - Reduce code duplication
