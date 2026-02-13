@@ -42,6 +42,19 @@ The scripts are designed mainly for **MySQL**
 - Reusable database logic
 
 ## Learning Objective
+- What stored procedures are and why we use them
+- Basic syntax and DELIMITER usage
+- Creating simple SELECT procedures
+- Using IN parameters to pass values
+- Using OUT parameters to return values
+- Combining IN and OUT parameters
+- Using variables and DECLARE statements
+- Building conditional logic with IF/ELSEIF/ELSE
+- Creating INSERT procedures with validation
+- Creating UPDATE procedures with calculations
+- Creating safe DELETE procedures with checks
+
+
 - Understand how stored procedures improve performance
 - Reduce code duplication
 - Encapsulate business logic at the database level
